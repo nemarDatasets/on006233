@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on006233-blue)](https://doi.org/10.82901/nemar.on006233)
+
 This dataset, used in the analysis reported by Kochi et al., (2025), contains intracranial EEG recordings from 108 individuals who performed an picture‑naming task. Electrode coordinates are provided in MNI‑305 space.
 
 Each EDF file is tagged for the auditory naming task with the following event codes:  
