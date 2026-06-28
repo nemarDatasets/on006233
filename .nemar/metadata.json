@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Picture naming",
-  "description": "This dataset comprises intracranial EEG recordings from 108 individuals performing a picture-naming task. Electrode coordinates are provided in MNI-305 stereotactic space. The recordings include event markers for stimulus onset and response onset, enabling analysis of neural dynamics during language production and naming processes.",
-  "methods_description": "Intracranial EEG recordings were acquired during a picture-naming task. Event codes mark stimulus onset (401) and response onset (501). Electrode coordinates are registered to MNI-305 space.",
+  "description": "This dataset comprises intracranial EEG recordings from 108 individuals performing an auditory naming task. Electrode coordinates are provided in MNI-305 stereotactic space. The recordings include event markers for stimulus onset (401) and response onset (501), enabling analysis of neural dynamics during language production and naming processes. This study was approved by the IRB of Wayne State University.",
+  "methods_description": "Intracranial EEG recordings were acquired during an auditory naming task from 108 individuals. Event codes mark stimulus onset (401) and response onset (501). Electrode coordinates are registered to MNI-305 space.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,19 +22,25 @@
       "term": "intracranial EEG"
     },
     {
-      "term": "electrocorticography"
-    },
-    {
-      "term": "picture naming"
+      "term": "auditory naming"
     },
     {
       "term": "language production"
     },
     {
-      "term": "neural recording"
+      "term": "speech production"
     },
     {
-      "term": "stereotactic coordinates"
+      "term": "neural dynamics"
+    },
+    {
+      "term": "electrode localization"
+    },
+    {
+      "term": "MNI-305"
+    },
+    {
+      "term": "event-related potentials"
     }
   ],
   "related_identifiers": [
@@ -57,6 +63,9 @@
   "funding_references": [
     {
       "funder_name": "N/A"
+    },
+    {
+      "funder_name": "Unfunded or funding information not available"
     }
   ],
   "resource_type_general": "Dataset",
