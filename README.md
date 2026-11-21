@@ -37,3 +37,10 @@ Limitation: these sidecars declare the frame and units only. electrodes.tsv is u
 
 The EDF headers of the picture-naming recordings label the unit "V", but the values are microvolts (for example, the physical range of sub-007 ses-1 is about ±934 and ±243, which is not plausible in volts).
 The `units` column of every `*_task-picture_channels.tsv` therefore says `µV` (micro sign, U+00B5).
+
+## Electrode coordinate frame (20 Nov 2026)
+
+The coordsystem.json files declare `fsaverage` (millimeters) instead of `MNI305`.
+Every contact's x/y/z in the 347 electrodes.tsv (39567 contacts) equals a vertex of the FreeSurfer fsaverage pial surface (left or right hemisphere) within 0.001 mm, which is the signature of FreeSurfer surface-based normalization to the fsaverage template.
+The volumetric frame of fsaverage is FreeSurfer's MNI305 space, which is why the README above calls the space MNI-305.
+No coordinate value changed.
