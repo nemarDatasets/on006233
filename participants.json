@@ -9,10 +9,8 @@
     "LongName": "",
     "Description": "sex of the participant as reported by the participant",
     "Levels": {
-      "m": "male",
-      "f": "female",
-      "F": "female",
-      "M": "male"
+      "M": "male",
+      "F": "female"
     },
     "Units": "",
     "TermURL": "http://www.todo.com/fixme"
@@ -22,7 +20,8 @@
     "Description": "handedness of the participant as reported by the participant",
     "Levels": {
       "Lt": "left",
-      "Rt": "right"
+      "Rt": "right",
+      "Ambidextrous": "ambidextrous"
     },
     "Units": "",
     "TermURL": "http://www.todo.com/fixme"
