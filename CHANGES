@@ -1,2 +1,19 @@
+1.0.1 2026-10-22
+  - Add 2 unambiguous source-label alias encodings using existing category keys/definitions;
+    retain every original definition and all participant/electrode table bytes. No new clinical
+    meaning or data recoding. Exact original schema retained in sourcedata/enumeration-alias-originals/participants.json.
+  - Remove 1 empty Levels enumerations from participants.json; no defined categories
+    or participant table values change. Exact source schema retained under
+    sourcedata/participant-schema-before-empty-enum-fix/participants.json.
+  - 2026-10-19 electrode locations: add coordsystem.json MNI305/mm next to 347 electrodes.tsv (347 files). README: section 'Electrode locations (19 Oct 2026)'.
+  - channels.tsv of 347 recordings = the data-file header channel list (name, order, count; matched by name): 0 rows renamed to the header name, 17354 rows added, 44820 rows removed (kept in sourcedata/channels-removed-2026-10-18/), 0 files reordered, 16648 bipolar-derivation rows in 344 files (status from both contact rows). Before, mne_bids could not apply channels.tsv to these files (count or name mismatch).
+  - README: section 'Channel names follow the data headers'.
+  - Later additions under this version (the entries above date from 2026-10-22; the participants.json edits were made on 2026-10-27):
+    2026-10-27 participants.json: alias and empty-enumeration edits as described above.
+    2026-11-20 channels.tsv `units` of the 347 picture-naming recordings: V -> µV (the EDF headers label the unit "V" but the values are microvolts; README section 'Units of the picture-naming recordings'); 17354 rows.
+    2026-11-20 coordsystem.json of 347 recordings: iEEGCoordinateSystem MNI305 -> fsaverage (every contact is a vertex of the fsaverage pial surface; README section 'Electrode coordinate frame').
+    2026-11-20 participants.json: sex Levels M/F only (the lowercase aliases m/f are not used in participants.tsv), handedness Levels gain Ambidextrous (present in participants.tsv).
+    2026-11-20 sourcedata/enumeration-alias-originals.tar.gz replaced by the plain JSON it contained, sourcedata/enumeration-alias-originals/participants.json.
+
 1.0.0 2025-05-19
   - initial version
