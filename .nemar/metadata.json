@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Picture naming",
-  "description": "This dataset contains intracranial EEG (iEEG) recordings from 108 individuals performing a picture-naming task. Electrode coordinates are provided in MNI-305 space, and events mark stimulus onset and response onset. The data were used to study early facilitative and late compensatory neural interactions underlying naming.",
-  "methods_description": "Intracranial EEG was recorded in EDF format while participants performed a picture-naming task. Event codes 401 mark stimulus onset and 501 mark response onset. Electrode locations are reported in MNI-305 space.",
+  "description": "Intracranial EEG (iEEG) recordings from 108 individuals with epilepsy who performed a picture-naming task, with stimulus-onset and response-onset events marked in each EDF file. Electrode coordinates are provided in MNI-305 (FreeSurfer fsaverage) space. The data were used to study early facilitative and late compensatory neural interactions during naming.",
+  "methods_description": "Intracranial EEG was recorded in EDF format during a picture-naming task. Event codes 401 mark stimulus onset and 501 mark response onset. Electrode coordinates were aligned to the FreeSurfer standard brain (fsaverage/MNI305), in millimeters.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -75,5 +75,5 @@
     ".tsv",
     ".yml"
   ],
-  "source_hash": "6626db44e5ee573453a61e25d942f9397a8c887dbe31b5e3dc6763c61ed86f31"
+  "source_hash": "265f60bb80c81e2238f7e8f93e81dc5a62097e599349ca370aa7c9dda21bb00b"
 }
